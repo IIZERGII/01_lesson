@@ -1,5 +1,7 @@
-sq = float(input('Введите сторону квадрата: '))
+import math
 
-def square(sq):
-        print(round(sq*sq))
-square(sq)
+def square(side: float) -> int:
+    return math.ceil(side * side)
+
+side = float(input("Введите сторону квадрата: "))
+print(f"Площадь квадрата: {square(side)}")
